@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연락처 - [Soltine]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="products.html">제품</a></li>
+                <li><a href="ingredients.html">성분용어집</a></li>
+                <li><a href="about.html">브랜드 소개</a></li>
+                <li><a href="contact.html" class="active">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>📞 연락처</h1>
+        <p>언제든지 문의사항이 있으시면 연락주세요</p>
+    </section>
+
+    <section class="contact-content">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>고객센터</h2>
+                <div class="info-item">
+                    <h3>📞 전화</h3>
+                    <p>02-1234-5678</p>
+                    <p class="info-note">평일 10:00 - 18:00 (점심시간 12:00 - 13:00)</p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>✉️ 이메일</h3>
+                    <p>contact@yourbrand.com</p>
+                    <p class="info-note">24시간 접수 가능 (답변은 평일 근무시간 내)</p>
+                </div>
+                
+                <div class="info-item">
+                    <h3>📍 주소</h3>
+                    <p>서울특별시 강남구 테헤란로 123<br>빌딩 5층</p>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>문의하기</h2>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">이름 *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">이메일 *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">전화번호</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">제목 *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">문의내용 *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">문의하기</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Soltine]. All Rights Reserved.</p>
+    </footer>
+
+    <!-- 챗봇 버튼 -->
+    <div class="chatbot-button" id="chatbotButton">
+        <img src="images/chatbot.png" alt="챗봇">
+    </div>
+
+    <!-- Tawk.to 스크립트 (아래에 Tawk.to에서 받은 스크립트를 넣어주세요) -->
+    <!-- Start of Tawk.to Script -->
+    <!-- 여기에 Tawk.to 스크립트를 붙여넣으세요 -->
+    <!-- End of Tawk.to Script -->
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
+
+
+

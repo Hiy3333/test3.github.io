@@ -1,0 +1,28 @@
+# GitHub Pages 배포 시 무시할 파일들
+
+# 문서 파일 (선택사항)
+*.md
+!README.md
+
+# 중간 파일들
+images/output/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 에디터 설정 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 로그 파일
+*.log
+
+# 임시 파일
+*.tmp
+*.temp
+

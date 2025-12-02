@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품 상세 - [Soltine]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="products.html">제품</a></li>
+                <li><a href="ingredients.html">성분용어집</a></li>
+                <li><a href="about.html">브랜드 소개</a></li>
+                <li><a href="contact.html">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail-page">
+        <div class="product-detail-container">
+            <!-- 왼쪽 절반: 제품 이미지/비디오 -->
+            <div class="product-detail-image">
+                <div id="productImageContainer">
+                    <!-- 이미지 또는 비디오가 여기에 동적으로 삽입됩니다 -->
+                </div>
+            </div>
+
+            <!-- 오른쪽 절반: 제품 정보 -->
+            <div class="product-detail-info">
+                <!-- 브레드크럼 -->
+                <div class="breadcrumb">
+                    <a href="products.html">스토어</a>
+                    <span> > </span>
+                    <span id="productLineBreadcrumb">GLYF</span>
+                </div>
+
+                <!-- 제품 라인 (작은 글씨) -->
+                <div class="product-detail-line" id="productLine">GLYF</div>
+                
+                <!-- 제품 이름 -->
+                <h1 class="product-detail-name" id="productName">제품 이름</h1>
+                
+                <!-- 평점 및 리뷰 -->
+                <div class="product-rating">
+                    <span class="rating-stars">★4.2</span>
+                    <span class="rating-count">(30개의 리뷰)</span>
+                </div>
+
+                <!-- 색상 선택 -->
+                <div class="color-selection">
+                    <div class="color-selection-header">
+                        <span class="selected-color-label" id="selectedColorLabel">01 코이코이</span>
+                        <span class="color-description" id="colorDescription">(수줍어하는 뺨을 닮아 맑고 뽀얀 코이 핑크)</span>
+                    </div>
+                    <div class="color-options">
+                        <div class="color-option active" data-color="01 코이코이">
+                            <div class="color-swatch" style="background-color: #FFB6C1;"></div>
+                        </div>
+                        <div class="color-option" data-color="02 로즈">
+                            <div class="color-swatch" style="background-color: #FF69B4;"></div>
+                        </div>
+                        <div class="color-option" data-color="03 피치">
+                            <div class="color-swatch" style="background-color: #FFDAB9;"></div>
+                        </div>
+                        <div class="color-option" data-color="04 코랄">
+                            <div class="color-swatch" style="background-color: #FF7F50;"></div>
+                        </div>
+                        <div class="color-option" data-color="05 누드">
+                            <div class="color-swatch" style="background-color: #F5DEB3;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 제품 설명 및 가격 -->
+                <div class="product-description-price">
+                    <p class="product-description">다시 돌아 온 <span id="productNameDesc">제품 이름</span> · <span id="productSize">3.9g</span></p>
+                    <div class="product-detail-price" id="productPrice">₩43,000</div>
+                </div>
+
+                <!-- 구매하기 버튼 -->
+                <div class="purchase-section">
+                    <button class="purchase-button" id="purchaseButton">구매하기</button>
+                    <p class="stock-status" id="stockStatus">재고가 있습니다.</p>
+                    <p class="purchase-count">99명 이상이 구매했어요</p>
+                    <button class="notification-button" id="notificationButton">
+                        <span>⏰</span> 알림 받기
+                    </button>
+                </div>
+
+                <!-- 상세 정보 (아코디언) -->
+                <div class="product-details-section">
+                    <div class="detail-item">
+                        <h3 class="detail-toggle active">상세 정보 <span class="toggle-icon">▼</span></h3>
+                        <div class="detail-content active">
+                            <div class="detail-info-grid">
+                                <div class="detail-info-item">
+                                    <strong>용량:</strong> <span>3.9g</span>
+                                </div>
+                                <div class="detail-info-item">
+                                    <strong>제조국:</strong> <span>대한민국</span>
+                                </div>
+                                <div class="detail-info-item">
+                                    <strong>사용기한:</strong> <span>제조일로부터 36개월</span>
+                                </div>
+                                <div class="detail-info-item">
+                                    <strong>주의사항:</strong> <span>눈에 들어가지 않도록 주의하세요. 이상이 있으면 사용을 중지하세요.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <h3 class="detail-toggle">사용법 <span class="toggle-icon">▼</span></h3>
+                        <div class="detail-content">
+                            <p>세안 후 토너 단계에서 사용하거나 크림과 함께 사용하면 효과적입니다. 적당량을 덜어 얼굴에 부드럽게 발라주세요.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <h3 class="detail-toggle">주요 성분 <span class="toggle-icon">▼</span></h3>
+                        <div class="detail-content">
+                            <p>히알루론산, 세라마이드, 니아신아마이드, 비타민 C, 레티놀</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <h3 class="detail-toggle">크리에이터 코멘트 <span class="toggle-icon">▼</span></h3>
+                        <div class="detail-content">
+                            <div class="creator-comment">
+                                <p>다시 돌아 온 GLYF multi stick! Hue Spread Stick이 새로운 감성 컬러와 함께 돌아왔습니다.</p>
+                                <p>자연스러운 홍조를 숨기지 말고 표현해보세요. 수줍어하는 뺨처럼 맑고 뽀얀 핑크 컬러로 당신의 자연스러운 아름다움을 강조하세요.</p>
+                                <p class="creator-signature">- GLYF</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 [Soltine]. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // URL 파라미터에서 제품 정보 가져오기
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageName = urlParams.get('image') || 'product2';
+        const productName = urlParams.get('name') || '제품 이름';
+        const productLine = urlParams.get('line') || 'GLYF';
+        const price = urlParams.get('price') || '₩43,000';
+        const type = urlParams.get('type') || 'image';
+
+        // 제품 정보 표시
+        document.getElementById('productName').textContent = productName;
+        document.getElementById('productLine').textContent = productLine;
+        document.getElementById('productPrice').textContent = price;
+
+        // 이미지 또는 비디오 표시
+        const imageContainer = document.getElementById('productImageContainer');
+        if (type === 'video') {
+            const video = document.createElement('video');
+            video.autoplay = true;
+            video.muted = true;
+            video.loop = true;
+            video.playsInline = true;
+            video.style.width = '100%';
+            video.style.height = '100%';
+            video.style.objectFit = 'cover';
+            const source = document.createElement('source');
+            source.src = `images/${imageName}.mp4`;
+            source.type = 'video/mp4';
+            video.appendChild(source);
+            imageContainer.appendChild(video);
+        } else {
+            const img = document.createElement('img');
+            img.src = `images/${imageName}.png`;
+            img.alt = productName;
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            imageContainer.appendChild(img);
+        }
+
+        // 제품 정보 업데이트
+        document.getElementById('productNameDesc').textContent = productName;
+        document.getElementById('productLineBreadcrumb').textContent = productLine;
+
+        // 색상 선택 기능
+        const colorOptions = document.querySelectorAll('.color-option');
+        const colorDescription = document.getElementById('colorDescription');
+        const selectedColorLabel = document.getElementById('selectedColorLabel');
+        
+        const colorDescriptions = {
+            '01 코이코이': '(수줍어하는 뺨을 닮아 맑고 뽀얀 코이 핑크)',
+            '02 로즈': '(우아하고 고급스러운 로즈 핑크)',
+            '03 피치': '(부드럽고 따뜻한 피치 톤)',
+            '04 코랄': '(생기 넘치는 코랄 오렌지)',
+            '05 누드': '(자연스럽고 모던한 누드 베이지)'
+        };
+
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                // 모든 옵션에서 active 제거
+                colorOptions.forEach(opt => opt.classList.remove('active'));
+                // 클릭한 옵션에 active 추가
+                this.classList.add('active');
+                // 색상 설명 업데이트
+                const selectedColor = this.getAttribute('data-color');
+                selectedColorLabel.textContent = selectedColor;
+                colorDescription.textContent = colorDescriptions[selectedColor] || '';
+            });
+        });
+
+        // 아코디언 기능
+        const detailToggles = document.querySelectorAll('.detail-toggle');
+        detailToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isActive = this.classList.contains('active');
+                
+                // 모든 아코디언 닫기
+                detailToggles.forEach(t => {
+                    t.classList.remove('active');
+                    t.nextElementSibling.classList.remove('active');
+                });
+                
+                // 클릭한 항목만 열기/닫기
+                if (!isActive) {
+                    this.classList.add('active');
+                    content.classList.add('active');
+                }
+            });
+        });
+
+        // 구매하기 버튼
+        document.getElementById('purchaseButton').addEventListener('click', function() {
+            alert('구매 기능은 준비 중입니다.');
+        });
+
+        // 알림 받기 버튼
+        document.getElementById('notificationButton').addEventListener('click', function() {
+            alert('재입고 알림 신청이 완료되었습니다.');
+        });
+    </script>
+
+    <!-- 챗봇 버튼 -->
+    <div class="chatbot-button" id="chatbotButton">
+        <img src="images/chatbot.png" alt="챗봇">
+    </div>
+
+    <!-- Tawk.to 스크립트 (아래에 Tawk.to에서 받은 스크립트를 넣어주세요) -->
+    <!-- Start of Tawk.to Script -->
+    <!-- 여기에 Tawk.to 스크립트를 붙여넣으세요 -->
+    <!-- End of Tawk.to Script -->
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
+

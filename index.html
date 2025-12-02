@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 [Soltine] - 자연의 아름다움</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈</a></li>
+                <li><a href="products.html">제품</a></li>
+                <li><a href="ingredients.html">성분용어집</a></li>
+                <li><a href="about.html">브랜드 소개</a></li>
+                <li><a href="contact.html">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 수평 스크롤 슬라이드 홈 화면 -->
+    <main class="horizontal-scroll-container">
+        <div class="slide-wrapper">
+            <!-- 슬라이드 1 - LOOKBOOK 이미지 1 -->
+            <section class="slide slide-1">
+                <div class="lookbook-image">
+                    <img src="images/model1.jpg" alt="모델 1">
+                </div>
+            </section>
+
+            <!-- 슬라이드 2 - LOOKBOOK 이미지 2 -->
+            <section class="slide slide-2">
+                <div class="lookbook-image">
+                    <img src="images/model2.jpg" alt="모델 2">
+                </div>
+            </section>
+
+            <!-- 슬라이드 3 - LOOKBOOK 이미지 3 -->
+            <section class="slide slide-3">
+                <div class="lookbook-image">
+                    <img src="images/model3.jpg" alt="모델 3">
+                </div>
+            </section>
+
+            <!-- 슬라이드 4 - LOOKBOOK 이미지 4 -->
+            <section class="slide slide-4">
+                <div class="lookbook-image">
+                    <img src="images/model4.jpg" alt="모델 4">
+                </div>
+            </section>
+
+            <!-- 슬라이드 5 - LOOKBOOK 이미지 5 -->
+            <section class="slide slide-5">
+                <div class="lookbook-image">
+                    <img src="images/model5.jpg" alt="모델 5">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 스크롤 인디케이터 -->
+    <div class="scroll-indicator">
+        <div class="indicator-dot active" data-slide="0"></div>
+        <div class="indicator-dot" data-slide="1"></div>
+        <div class="indicator-dot" data-slide="2"></div>
+        <div class="indicator-dot" data-slide="3"></div>
+        <div class="indicator-dot" data-slide="4"></div>
+    </div>
+
+    <!-- 챗봇 버튼 -->
+    <div class="chatbot-button" id="chatbotButton">
+        <img src="images/chatbot.png" alt="챗봇">
+    </div>
+
+    <!-- Tawk.to 스크립트 (아래에 Tawk.to에서 받은 스크립트를 넣어주세요) -->
+    <!-- 
+    Tawk.to 스크립트는 https://dashboard.tawk.to/ 에서 받을 수 있습니다.
+    계정 생성 후 "Administration" > "Channels" > "Chat Widget" 에서 스크립트를 복사하세요.
+    -->
+    <!-- Start of Tawk.to Script -->
+    <!-- 여기에 Tawk.to 스크립트를 붙여넣으세요 -->
+    <!-- 
+    예시:
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    -->
+    <!-- End of Tawk.to Script -->
+
+    <script src="chatbot.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
