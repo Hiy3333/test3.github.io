@@ -50,3 +50,4 @@ GitHub Pages로 배포된 사이트: `https://your-username.github.io/your-repo-
 
 © 2025 [Soltine]. All Rights Reserved.
 
+
